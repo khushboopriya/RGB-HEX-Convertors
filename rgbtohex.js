@@ -28,6 +28,7 @@ var greenslider = document.querySelector("#green-range");
 var blueslider = document.querySelector("#blue-range");
 var conversion = document.querySelector("#to-Hex");
 var clear = document.querySelector("#clear");
+var colordisplay = document.querySelector("#op-color");
 
 // function componentToHex(c) {
 //     let hex = c.toString(16);
@@ -41,6 +42,7 @@ var clear = document.querySelector("#clear");
 conversion.addEventListener('click',()=>{
 
    output.value = rgbToHex(red.value,green.value,blue.value);
+   colordisplay.style.backgroundColor = output.value;
 //    output.style.backgroundColor=hex.value; 
 });
 
@@ -66,6 +68,7 @@ clear.addEventListener('click',()=>{
    greenslider.value = "0";
    blueslider.value = "0";
    redslider.value = "0";
+   colordisplay.style.backgroundColor = "#000000";
    
 
 });

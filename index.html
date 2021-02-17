@@ -9,38 +9,45 @@
     
 </head>
 <body>
-    <h1> RGB To Hex</h1>
+    <h1 style="background-color: rgb(138, 175, 207);"> RGB To Hex</h1>
+    <section class="like-body">
+        <section class = "main-container">
             <div class="input-section">
                 <div class="red-slider-container">
-                    <label>RED:  </label>
-                    <input type ="text" id ="input-red" placeholder="0-255" ></input>
+                    <div><label>RED:  </label></div>
+                    <input type ="text" id ="input-red" placeholder="0-255" class="textbox"></input>
                     <input type="range" min="0" max="250" value="0" class="slider" id="red-range" onchange="updateRedTextInput(this.value)";>
                 </div>
-                <div class="green-slider-container"></div>
-                    <label>GREEN:</label>
-                    <input type ="text" id ="input-green" placeholder="0-255"></input>
+                <div class="green-slider-container">
+                    <div><label>GREEN:</label></div>
+                    <input type ="text" id ="input-green" placeholder="0-255" class="textbox"></input>
                     <input type="range" min="0" max="250" value="0" class="slider" id="green-range"  onchange="updateGreenTextInput(this.value)";>
                 </div>
                 <div class="blue-slider-container">
-                    <label>BLUE: </label>
-                    <input type ="text" id ="input-blue" placeholder="0-255"></input>
+                    <div><label>BLUE: </label></div>
+                    <input type ="text" id ="input-blue" placeholder="0-255" class="textbox"></input>
                     <input type="range" min="0" max="250" value="0" class="slider" id="blue-range"  onchange="updateBlueTextInput(this.value)";>
                 </div>
             </div>
 
             <div class="action-item">
-                <input type ="button" id ="to-Hex" value="Covert to Hex">
-                <input type ="button" id ="clear" value="Clear">
+                <input class="button" type ="button" id ="to-Hex" value="Covert">
+                <input class="button" type ="button" id ="clear" value="Clear">
             </div>
 
             <div class="output-section">
                 <label>HEX VALUE: </label>
-                <input type ="text" id ="output-hex" placeholder="Output value"></input>
+                <input class="textbox-output" type ="text" id ="output-hex" placeholder="Output value"></input>
+                <div class="output-color" id ="op-color"></div>
             </div>
 
             <div class="color-box">
-
+                
             </div>
+
+        </section>
+
+    </section>
                 
             
 
