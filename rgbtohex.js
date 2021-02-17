@@ -62,10 +62,11 @@ clear.addEventListener('click',()=>{
    red.value = "";
    green.value = "";
    blue.value = "";
+   output.value = "";
    greenslider.value = "0";
    blueslider.value = "0";
    redslider.value = "0";
-   output.value = "";
+   
 
 });
 
