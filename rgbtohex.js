@@ -19,11 +19,14 @@ function rgbToHex(red,green,blue)
 
 
 
-const red = document.querySelector("#input-red");
-const blue = document.querySelector("#input-blue");
-const green = document.querySelector("#input-green");
-const output = document.querySelector("#output-hex");
-const conversion = document.querySelector("#toHex");
+var red = document.querySelector("#input-red");
+var blue = document.querySelector("#input-blue");
+var green = document.querySelector("#input-green");
+var output = document.querySelector("#output-hex");
+var redslider = document.querySelector("#red-range");
+var greenslider = document.querySelector("#green-range");
+var blueslider = document.querySelector("#blue-range");
+var conversion = document.querySelector("#toHex");
 
 // function componentToHex(c) {
 //     let hex = c.toString(16);
@@ -38,5 +41,21 @@ conversion.addEventListener('click',()=>{
 
    output.value = rgbToHex(red.value,green.value,blue.value);
 //    output.style.backgroundColor=hex.value; 
-
 });
+
+// Syncing slider to input field
+
+function updateRedTextInput(passedvalue){
+   red.value = passedvalue;
+}
+
+function updateBlueTextInput(passedvalue){
+   blue.value = passedvalue;
+}
+
+function updateGreenTextInput(passedvalue){
+   green.value = passedvalue;
+}
+
+
+

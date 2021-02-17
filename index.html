@@ -10,16 +10,35 @@
 <body>
     <h1> RGB To Hex</h1>
             <div class="input-section">
-                <input type ="text" id ="input-red" placeholder="Enter the Red value"></input>
-                <input type ="text" id ="input-green" placeholder="Enter the Green value"></input>
-                <input type ="text" id ="input-blue" placeholder="Enter the Blue value"></input>
-
-                <input type ="text" id ="output-hex" placeholder="Output value"></input>
+                <input type ="text" id ="input-red" placeholder="0-255" ></input>
+                <div class="red-slider-container">
+                    <input type="range" min="0" max="250" value="0" class="slider" id="redRange" onchange="updateRedTextInput(this.value)";>
+                </div>
+                <input type ="text" id ="input-green" placeholder="0-255"></input>
+                <div class="green-slider-container">
+                    <input type="range" min="0" max="250" value="0" class="slider" id="greenRange"  onchange="updateGreenTextInput(this.value)";>
+                </div>
+                <input type ="text" id ="input-blue" placeholder="0-255"></input>
+                <div class="blue-slider-container">
+                    <input type="range" min="0" max="250" value="0" class="slider" id="blueRange"  onchange="updateBlueTextInput(this.value)";>
+                </div>
             </div>
 
             <div class="action-item">
                 <input type ="button" id ="toHex" value="Covert to Hex">
             </div>
+
+            <div class="output-section">
+                <input type ="text" id ="output-hex" placeholder="Output value"></input>
+            </div>
+
+            <div class="color-box">
+
+            </div>
+                
+            
+
+            
     
 </body>
 </html>
