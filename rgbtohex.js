@@ -23,9 +23,9 @@ var red = document.querySelector("#input-red");
 var blue = document.querySelector("#input-blue");
 var green = document.querySelector("#input-green");
 var output = document.querySelector("#output-hex");
-var redslider = document.querySelector("#red-range");
-var greenslider = document.querySelector("#green-range");
-var blueslider = document.querySelector("#blue-range");
+var redslider = document.querySelector("#redRange");
+var greenslider = document.querySelector("#greenRange");
+var blueslider = document.querySelector("#blueRange");
 var conversion = document.querySelector("#toHex");
 var clear = document.querySelector("#clear");
 
