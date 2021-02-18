@@ -50,8 +50,8 @@ h1{
 .textbox{
     margin-top: 2vh;
     margin-bottom: 3vh;
-    width: 4vw;
-    height: 3vh;
+    width: 10vw;
+    height: 7vh;
     border-radius: 0.32vw;
     border: 2px solid grey;
 }
@@ -122,8 +122,12 @@ h1{
 .label{
     color: #093347; 
     font-size: 3vh;
-    margin-left: 5vw;
+    margin-left: 3.5vw;
     
+}
+
+.green-label{
+    margin-left: 3vw;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

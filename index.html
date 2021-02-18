@@ -10,6 +10,7 @@
 </head>
 <body>
     <h1> RGB To Hex</h1>
+    <span><a href="hextorgb.html" style="color: black; font-size: 5vh;">HEX To RGB</a></span>
     <section class="like-body">
         <section class = "main-container">
             <div class="input-section">
@@ -19,16 +20,16 @@
                     <input type="range" min="0" max="250" value="0" class="red-slider" id="red-range" onchange="updateRedTextInput(this.value)";>
                 </div>
 
-                <div class="blue-slider-container">
-                    <div><label class="label">BLUE </label></div>
-                    <input type ="text" id ="input-blue" placeholder="0-255" class="textbox"></input>
-                    <input type="range" min="0" max="250" value="0" class="blue-slider" id="blue-range"  onchange="updateBlueTextInput(this.value)";>
-                </div>
-
                 <div class="green-slider-container">
                     <div><label class="label">GREEN</label></div>
                     <input type ="text" id ="input-green" placeholder="0-255" class="textbox"></input>
                     <input type="range" min="0" max="250" value="0" class="green-slider" id="green-range"  onchange="updateGreenTextInput(this.value)";>
+                </div>
+
+                <div class="blue-slider-container">
+                    <div><label class="label">BLUE </label></div>
+                    <input type ="text" id ="input-blue" placeholder="0-255" class="textbox"></input>
+                    <input type="range" min="0" max="250" value="0" class="blue-slider" id="blue-range"  onchange="updateBlueTextInput(this.value)";>
                 </div>
                 
             </div>
@@ -44,14 +45,15 @@
                 <div class="output-color" id ="op-color"></div>
             </div>
 
-            <div class="color-box">
-                
-            </div>
+            
 
         </section>
 
     </section>
-                
+        
+    <div class="footer">
+                FOOTER 
+    </div>
             
 
             
