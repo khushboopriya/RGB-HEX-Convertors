@@ -106,11 +106,13 @@ h1{
 .convert-button{
     background-color: #008CBA;
     color:white;
+    cursor: pointer;
 }
 
 .clear-button{
     background-color: rgb(248, 7, 7);
     color:white;
+    cursor: pointer;
 }
 
 .label{
@@ -124,7 +126,33 @@ h1{
     padding: 0.4vh;
   }
 
-  .slider{
+  .red-slider{
       margin-top: 3.8vh;
+      -webkit-appearance: none;
+      background: #cc0808;
   }
 
+  .blue-slider{
+    margin-top: 3.8vh;
+    -webkit-appearance: none;
+    background: #054b6b;
+}
+
+
+.green-slider{
+    margin-top: 3.8vh;
+    -webkit-appearance: none;
+    background: #0bb814;
+}
+
+.red-slider::-webkit-slider-thumb{
+    cursor: pointer;
+}
+
+.green-slider::-webkit-slider-thumb{
+    cursor: pointer;
+}
+
+.blue-slider::-webkit-slider-thumb{
+    cursor: pointer;
+}
