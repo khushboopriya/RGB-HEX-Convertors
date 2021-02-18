@@ -1,7 +1,14 @@
 body{
-    background-color: #daded4;
+    background-color:#a3b2b6;
 }
 
+
+h1{
+    /* background-color: rgb(138, 175, 207); */
+    text-align: center;
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
 .output-color{
     background-color: #000000;
     height: 5vh;
@@ -18,11 +25,15 @@ body{
 }
 
 .main-container{
-    background-color: aqua;
-    width: 80vw;
+    /* background-color: aqua; */
+    width: 65vw;
     height: 70vh;
     display: flex;
     flex-direction: row;
+    background-color:#daded4;
+    border-radius: 0.7vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* justify-content: space-between; */
 }
 
 .input-section{
@@ -31,21 +42,26 @@ body{
     flex-direction: column;
     width: 30vw;
     row-gap: 3vh;
-    background-color: rgb(226, 105, 105);
+    /* background-color: #d8e4e7;  */
     justify-content: center;
     align-items: center;
 }
 
 .textbox{
-    width: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    width: 4vw;
+    height: 3vh;
+    border-radius: 0.32vw;
+    border: 2px solid grey;
 }
 
 .action-item{
     margin:3%;
-    background-color: blue;
+    /* background-color: #396038; */
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 20vw;
     row-gap: 6vh;
     justify-content: center;
     align-items: center;
@@ -55,7 +71,7 @@ body{
     margin: 5%;
     width:20vw;
     height: 50vh;
-    background-color: rgb(161, 133, 133);
+    /* background-color:#a3b2b6; */
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -67,16 +83,48 @@ body{
 
 
 .textbox-output{
-    width: 10vw
+    margin-top: -2.5vh;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 0.32vw;
+    border: 2px solid grey;
 }
 
 .button{
     width: 10vw;
-    height: 6vh;
+    height: 8vh;
     border-radius: 0.52vw;
+    font-size: 3vh;
 }
 
 .output-color{
-    height: 10vh;
+    height: 15vh;
     width: 15vw;
+    border-radius: 0.4vw;
 }
+
+.convert-button{
+    background-color: #008CBA;
+    color:white;
+}
+
+.clear-button{
+    background-color: rgb(248, 7, 7);
+    color:white;
+}
+
+.label{
+    color: #093347; 
+    font-size: 3vh;
+    margin-left: 5vw;
+    
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    padding: 0.4vh;
+  }
+
+  .slider{
+      margin-top: 3.8vh;
+  }
+
